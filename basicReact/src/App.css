@@ -50,3 +50,19 @@
   font-size: 20px;
   font-weight: 2rem;
 }
+.todo {
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid blue;
+  border-radius: 20px;
+  background-color: violet;
+  font-weight: 800;
+  font-size: 2rem;
+  color: black;
+}
+.todo li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}

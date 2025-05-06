@@ -1,5 +1,6 @@
 import './App.css'
 import Counter from './counter';
+import Team from './Team';
 function App() {
 
   // for button one (click me)
@@ -28,6 +29,7 @@ function App() {
       <button onClick={() => handlePara(3)} >Button</button> 
 
       <Counter />
+      <Team> </Team>
     </>
   )
 }

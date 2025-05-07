@@ -1,0 +1,14 @@
+.box {
+    border: 2px solid blueviolet;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: black;
+    font-weight: 700;
+}
+h3 {
+    color: blueviolet;
+    font-size: 1.5em;
+}

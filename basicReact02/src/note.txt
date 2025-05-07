@@ -1,0 +1,9 @@
+Approchs-
+
+*** Steps to Fetch and Display Data in a React Component Using useEffect
+
+1. State to hold the data.
+2. declare  useEffect with callback function and dependency array.
+3. use fetch to load the data.
+4. set load data to the state.
+5.display data on the component.

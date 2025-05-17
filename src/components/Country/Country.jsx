@@ -1,3 +1,4 @@
+import CountryDetails from "../countryDetails/CountryDetails";
 import "./Country.css";
 import { useState } from "react";
 const Country = ({ country, handleVisitedCountry, handleVisitedFlag }) => {
@@ -51,7 +52,9 @@ const Country = ({ country, handleVisitedCountry, handleVisitedFlag }) => {
       {/* handleVisitedCountry() eta always kaj korbe na, eita dile sob gula country er jonno call hoye jabe. */}
 
       <button onClick={handleVisited}>{visited ? "visited" : "Going"}</button>
-      <button onClick={() => handleVisitedFlag(country.flags.png)}>Add Flag</button>
+      <button onClick={() => handleVisitedFlag(country.flags.png)}>
+        Add Flag
+      </button>
       {/* this is the one way to do this. */}
       {visited ? (
         <p className="btnColour"> i Have Visited</p>
@@ -60,6 +63,12 @@ const Country = ({ country, handleVisitedCountry, handleVisitedFlag }) => {
       )}
       {/* this is the another way to do this. */}
       {/* {visited && "I have visited this country."} */}
+      <hr />
+      <CountryDetails
+        country={country}
+        handleVisitedCountry={handleVisitedCountry}
+        handleVisitedFlag={handleVisitedFlag}
+      />
     </div>
   );
 };
